@@ -19,19 +19,143 @@
 		</div>
 
 		<div class="container mt-5">
-			<div class="row">
+			<div class="row pb-5 justify-content-md-center">
 				<div class="col-xs-12">
 					<form class="form-inline">
 						<div class="form-group mr-3">
-							<input type="number" name="disPrice" id="disPrice" class="form-control" placeholder="Purchase Price" required />
+							<input type="number" name="purPrice" id="purPrice" class="form-control" placeholder="Purchase Price" required />
 						</div>
 						<div class="form-group mr-3">
-							<input type="number" name="disPercentage" id="disPercentage" class="form-control" placeholder="Sell Price" required />
+							<input type="number" name="sellPrice" id="sellPrice" class="form-control" placeholder="Sell Price" required />
 						</div>
-						<button type="submit" name="calculate" id="calculate" class="btn btn-primary">Calculate</button>
+						<button type="submit" name="calculate" id="calculate" class="btn btn-primary mr-2">Calculate</button>
+						<button type="submit" name="reset" id="reset" class="btn btn-danger">Reset</button>
 					</form>
 
-					<div class="result text-center mt-4">Total Profit will be <span class="amount"></span>tk that means <span class="percentage"></span>%.</div>
+					<div class="result text-center mt-4"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-center mb-3">Eorange / Dhamaka Double Taka voucher</h2>
+				</div>
+
+				<div class="col-lg-6 col-sm-12">
+					<table class="table table-bordered table-hover table-striped table-dark">
+						<thead>
+							<tr>
+								<th colspan="6" class="text-center">BAJAJ</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th scope="col">Model</th>
+								<th scope="col">MRP</th>
+								<th scope="col">Buy</th>
+								<th scope="col">Sell</th>
+								<th scope="col">Profit</th>
+								<th scope="col">Margin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">CT-100 ES</th>
+								<td>95,500</td>
+								<td>47,750</td>
+								<td>80,000</td>
+								<td>32,250</td>
+								<td>67.53%</td>
+							</tr>
+							<tr>
+								<th scope="row">Platina 100 ES</th>
+								<td>99,500</td>
+								<td>49,750</td>
+								<td>84,000</td>
+								<td>34,250</td>
+								<td>68.84%</td>
+							</tr>
+							<tr>
+								<th scope="row">Discover 110cc</th>
+								<td>117,500</td>
+								<td>58,750</td>
+								<td>104,000</td>
+								<td>45,250</td>
+								<td>77.02%</td>
+							</tr>
+							<tr>
+								<th scope="row">Discover 125cc</th>
+								<td>131,900</td>
+								<td>65,950</td>
+								<td>116,000</td>
+								<td>50,050</td>
+								<td>75.89%</td>
+							</tr>
+							<tr>
+								<th scope="row">Pulsar SD</th>
+								<td>169,900</td>
+								<td>84,950</td>
+								<td>152,000</td>
+								<td>67,050</td>
+								<td>78.92%</td>
+							</tr>
+							<tr>
+								<th scope="row">Pulsar DD</th>
+								<td>180,900</td>
+								<td>90,450</td>
+								<td>162,000</td>
+								<td>71,550</td>
+								<td>79.10%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="col-lg-6 col-sm-12">
+					<table class="table table-bordered table-hover table-striped table-dark">
+						<thead>
+							<tr>
+								<th colspan="6" class="text-center">YAMAHA</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th scope="col">Model</th>
+								<th scope="col">MRP</th>
+								<th scope="col">Buy</th>
+								<th scope="col">Sell</th>
+								<th scope="col">Profit</th>
+								<th scope="col">Margin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">FZS V3</th>
+								<td>280,000</td>
+								<td>140,000</td>
+								<td>250,000</td>
+								<td>110,000</td>
+								<td>78.57%</td>
+							</tr>
+
+							<tr>
+								<th scope="row">MT15 INDO</th>
+								<td>510,000</td>
+								<td>255,000</td>
+								<td>455,000</td>
+								<td>200,000</td>
+								<td>78.43%</td>
+							</tr>
+							<tr>
+								<th scope="row">R15 INDO</th>
+								<td>530,000</td>
+								<td>265,000</td>
+								<td>470,000</td>
+								<td>250,000</td>
+								<td>77.36%</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,10 @@
 .jumbotron {
-  padding: 25px 0;
+	padding: 25px 0;
 }
 .jumbotron h1 {
-  font-size: 36px;
-  font-weight: bold;
+	font-size: 36px;
+	font-weight: bold;
+}
+.form-control {
+	border-color: #999;
 }
