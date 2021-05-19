@@ -47,16 +47,41 @@
 			.form-control {
 				border-color: #999;
 			}
+			.main-heading {
+				background: #343a40;
+				border-radius: 5px;
+				padding: 20px 0;
+				color: #fff;
+			}
+			footer.jumbotron {
+				margin-bottom: 0;
+				margin-top: 50px;
+			}
+			footer.jumbotron p {
+				margin-bottom: 0;
+			}
+			.result {
+				min-height: 50px;
+				font-size: 22px;
+				background: greenyellow;
+				padding: 20px 0px;
+			}
+			@media all and (max-width: 414px) {
+				.form-group {
+					display: inline-block;
+					width: 100%;
+				}
+			}
 		</style>
 	</head>
 	<body>
-		<div class="jumbotron text-sm-center">
+		<header class="jumbotron text-center">
 			<h1 class="display-3">Profit Calculator</h1>
-		</div>
+		</header>
 
 		<div class="container mt-5">
-			<div class="row pb-5 justify-content-md-center">
-				<div class="col-xs-12">
+			<div class="row text-center">
+				<div class="col-lg-12 col-xs-10 offset-xs-1">
 					<form class="form-inline">
 						<div class="form-group mr-3">
 							<input type="number" name="purPrice" id="purPrice" class="form-control" placeholder="Purchase Price" required />
@@ -68,23 +93,24 @@
 						<button type="submit" name="reset" id="reset" class="btn btn-danger">Reset</button>
 					</form>
 
-					<div class="result text-center mt-4"></div>
+					<div class="result text-center mt-5"></div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-12">
-					<h2 class="text-center mb-3">Eorange / Dhamaka Double Taka voucher</h2>
+				<div class="col-lg-12 mb-3 mt-5">
+					<h2 class="main-heading text-center mb-3">
+						Double Taka Voucher <br />
+						<small>(Dhamaka/eorange)</small>
+					</h2>
 				</div>
 
-				<div class="col-lg-6 col-sm-12">
-					<table class="table table-bordered table-hover table-striped table-dark">
+				<div class="col-lg-12 col-xs-12">
+					<table class="table table-bordered table-striped table-dark table-responsive-sm">
 						<thead>
 							<tr>
 								<th colspan="6" class="text-center">BAJAJ</th>
 							</tr>
-						</thead>
-						<thead>
 							<tr>
 								<th scope="col">Model</th>
 								<th scope="col">MRP</th>
@@ -144,26 +170,13 @@
 								<td>79.10%</td>
 							</tr>
 						</tbody>
-					</table>
-				</div>
 
-				<div class="col-lg-6 col-sm-12">
-					<table class="table table-bordered table-hover table-striped table-dark">
 						<thead>
 							<tr>
 								<th colspan="6" class="text-center">YAMAHA</th>
 							</tr>
 						</thead>
-						<thead>
-							<tr>
-								<th scope="col">Model</th>
-								<th scope="col">MRP</th>
-								<th scope="col">Buy</th>
-								<th scope="col">Sell</th>
-								<th scope="col">Profit</th>
-								<th scope="col">Margin</th>
-							</tr>
-						</thead>
+
 						<tbody>
 							<tr>
 								<th scope="row">FZS V3</th>
@@ -195,6 +208,10 @@
 				</div>
 			</div>
 		</div>
+
+		<footer class="jumbotron text-center">
+			<p class="lead">Built with ❤️</p>
+		</footer>
 		<script src="./main.js"></script>
 	</body>
 </html>

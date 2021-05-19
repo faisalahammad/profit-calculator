@@ -9,6 +9,7 @@ let percentage = document.querySelector(".percentage");
 
 // Show/Hide
 reset.style.display = "none";
+result.style.display = "none";
 
 calculate.addEventListener("click", function (e) {
 	let purPrice = document.querySelector("#purPrice").value;
@@ -21,7 +22,8 @@ calculate.addEventListener("click", function (e) {
 		let profit = sellPrice - purPrice;
 		let profitPerc = ((profit / purPrice) * 100).toFixed(2);
 
-		let message = `Total profit will be <b>${profit}tk</b> that means <b>${profitPerc}%</b>.`;
+		result.style.display = "block";
+		let message = `Total profit will be <b>${profit}tk</b>, that means <b>${profitPerc}%</b> profit.`;
 		result.innerHTML = message;
 
 		reset.style.display = "block";
