@@ -19,7 +19,7 @@ calculate.addEventListener("click", function (e) {
 		alert("Both value is required for calculation!");
 	} else {
 		// Main Calculation
-		let profit = sellPrice - purPrice;
+		let profit = (sellPrice - purPrice).toFixed(2);
 		let profitPerc = ((profit / purPrice) * 100).toFixed(2);
 
 		result.style.display = "block";
