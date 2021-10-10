@@ -19,11 +19,11 @@ calculate.addEventListener("click", function (e) {
 		alert("Both value is required for calculation!");
 	} else {
 		// Main Calculation
-		let profit = (sellPrice - purPrice).toFixed(2);
-		let profitPerc = ((profit / purPrice) * 100).toFixed(2);
+		let profit = (sellPrice - purPrice).toFixed(8);
+		let profitPerc = ((profit / purPrice) * 100).toFixed(3);
 
 		result.style.display = "block";
-		let message = `Total profit will be <b>${profit}tk</b>, that means <b>${profitPerc}%</b> profit.`;
+		let message = `Total profit will be <b>${profit} BDT</b>, that means <b>${profitPerc}%</b> profit.`;
 		result.innerHTML = message;
 
 		reset.style.display = "block";
